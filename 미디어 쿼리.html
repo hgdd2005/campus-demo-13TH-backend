@@ -1,49 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS Example</title>
-	<style>
-		.container {
-			display: flex;
-			flex-direction: column;
-			height: 100vh;
-			background-color: #f7f7f7;
-			padding: 20px;
-		}
-
-		.header {
-			background-color: #fff;
-			padding: 20px;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		}
-
-		.content {
-			flex: 1;
-			background-color: #fff;
-			padding: 20px;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-			margin-top: 20px;
-		}
-
-		.footer {
-			background-color: #fff;
-			padding: 20px;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-		}
-	</style>
+<style>
+body {
+background-color: green;
+}
+@media (max-width: 768px) {
+/* 768px 이하인 경우 */
+body {
+background-color: lightblue;
+}
+}
+@media (min-width: 1200px) {
+/* 1200px 이상인 경우 */
+body {
+background-color: lightyellow;
+}
+}
+</style>
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<h1>Header</h1>
-		</div>
-		<div class="content">
-			<h2>Content</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit vehicula est, vel pulvinar velit scelerisque eget. Duis luctus efficitur ante ac bibendum. Donec sagittis diam massa, vel facilisis elit suscipit at. Donec eu sapien ut tellus commodo egestas. Nullam vestibulum nibh eget ipsum facilisis sollicitudin. </p>
-		</div>
-		<div class="footer">
-			<p>Footer</p>
-		</div>
-	</div>
+<h1>Media Query Example</h1>
+<p>CSS에서 미디어 쿼리를 사용한 예입니다.</p>
 </body>
 </html>
